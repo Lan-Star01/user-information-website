@@ -1,0 +1,60 @@
+.content {
+    margin: auto;
+    width: 50%;
+    color: white;
+    padding: 3%;
+    font-family: 'Noto Sans Georgian', sans-serif;
+
+}
+
+h2 {
+    text-align: center;
+    margin-right: 3vw;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10% 0 15% 0;
+}
+
+
+.title button {
+    background-color: transparent;
+    border: none;
+    width: 5%;
+}
+
+
+.details-div {
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    border-radius: 6px;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+p {
+    margin-top: 3%;
+    margin-bottom: 2rems;
+}
+
+.details-div button {
+    width: 63%;
+    margin-top: 10%;
+}
+
+@media (max-width: 1023px) {
+    .content {
+      width: 80%;
+      margin: 0 auto; 
+    }
+}
+
+@media (max-width: 830px) {
+    .details-div button {
+        width: 80%;
+    }
+}
+

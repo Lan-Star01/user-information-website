@@ -1,0 +1,78 @@
+
+.home{
+    color: white;
+}
+
+.content {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+span {
+    color: #415c00;
+    font-weight: bold;
+}
+
+
+.table {
+    border-color: #3f5704;
+}
+
+.table tr th {
+    background-color: #415c00 !important;
+
+}
+
+.table td input {
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 8px;
+
+}
+
+
+.table td button {
+    background-color: transparent;
+    border: none;
+}
+
+img {
+    width: 72%;
+    transition: width 0.3s,
+}
+
+img:hover {
+    width: 100%;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: transparent;
+}
+.table-bordered>:not(caption)>*>*{
+    background-color: #1d240a;
+    
+}
+
+.title, .table-div {
+    margin-top: 10%;
+}
+
+.descr {
+    margin-top: 8% ;
+}
+
+.descr img {
+    width: 3%;
+     margin: 0 1% 0 1%;
+}
+
+@media (max-width: 1023px) {
+    .content {
+      width: 80%;
+      margin: 0 auto; 
+    }
+}

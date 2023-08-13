@@ -1,0 +1,43 @@
+<div class="content">
+    <div class="title">
+        <button (click)="goBack()"><img src="assets/back.png"></button>
+        <h2>მომხმარებლის დეტალური ინფორმაცია</h2>  
+    </div>
+      
+
+    <div class="details-div" *ngIf="userDetails">
+        <div class="detail-title">
+            <p>სახელი:</p>
+            <p>username:</p>
+            <p>მეილი:</p>
+            <p>ტელეფონის ნომერი:</p>
+            <p>ვებსაიტი:</p>
+            <p>მისამართი:</p>
+            <p>კომპანია:</p>
+            <p>კომპანიის სლოგანი:</p>
+            <p>Ბიზნეს სერვისი:</p>
+        </div>
+        <div class="data">
+            <p>{{ userDetails.name }}</p>
+            <p>{{ userDetails.username }}</p>
+            <p>{{ userDetails.email }}</p>
+            <p>{{ userDetails.phone }}</p>
+            <p>{{ userDetails.website }}</p>
+            <p>{{ userDetails.address.street }} street, {{ userDetails.address.city }}, {{ userDetails.address.suite }}</p>
+            <p>{{ userDetails.company.name }}</p>
+            <p>{{ userDetails.company.catchPhrase }}</p>
+            <p>{{ userDetails.company.bs }}</p>
+        </div>
+        
+        <button type="button" class="btn btn-success"(click)="navigateToUserPosts()" >მომხმარებლის პოსტები</button>
+
+    </div>
+
+</div>
+
+        <!-- <p>geo:</p>
+        <p>lat: {{ userDetails.address.geo.lat }}</p>
+        <p>lng: {{ userDetails.address.geo.lng }}</p> -->
+
+
+  

@@ -1,0 +1,40 @@
+.content {
+    margin: auto;
+    width: 50%;
+    padding: 3%;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-right: 9vw;
+}
+
+.card {
+    margin: 2% 0 2% 0;
+    background-color: #3f5704;
+    color: white;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10% 0 10% 0;
+}
+
+@media (max-width: 1023px) {
+    .content {
+      width: 80%;
+      margin: 0 auto; 
+    }
+}
+
+.title img {
+}
+
+.title button {
+    background-color: transparent;
+    border: none;
+    width: 5%;
+}

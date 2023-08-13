@@ -1,0 +1,44 @@
+<section class="home">
+    <div class="content">
+        <div class="title">
+            <h1>მომხმარებლები</h1>
+        </div>
+        <div class="descr">
+            მოცემულ ვებ-გვერდზე თქვენ შეგიძლიათ ნახოთ ინფორმაცია ჩვენი მომხმარებლების შესახებ. 
+            <img src="assets/user-details.png"><span>ღილაკზე დაჭერით </span>  თქვენ გადახვალთ გვერდზე სადაც შეგიძლიათ ნახოთ მომხმარებლების დეტალური ინფორმაცია.
+        </div>
+        <div class="table-div table-responsive">
+          <form [formGroup]="tableForm">
+            <table class="table table-striped table-bordered" formArrayName="users">
+              <thead>
+                <tr>
+                  <th>Full Name</th>
+                  <th>Username</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <ng-container *ngFor="let user of users.controls; let i = index" >
+                  <tr [formGroupName]="i">
+                    <td>
+                      <button (click)="navigateToDetails(i + 1)"><img src="assets/user-details.png"></button>
+                      
+                      <input formControlName="fullName">
+
+                    </td>
+                    <td>
+                      <input formControlName="username">
+                    </td>
+                    <td>
+                      <input formControlName="email">
+                    </td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </table>
+          </form>
+        </div>
+    </div>
+
+
+</section>

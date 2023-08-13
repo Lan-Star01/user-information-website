@@ -1,0 +1,26 @@
+<div class="content">
+    <div class="title">
+        <button (click)="goBack()"><img src="assets/back.png"></button>
+        <h2>{{user?.name}}-ის პოსტები</h2>
+    </div>
+    <div class="card-deck">
+        <div class="card" *ngFor="let post of posts">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.body }}</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+  
+
+<!-- <div class="user-posts">
+    <h2>User Posts for UserId: {{ userId }}</h2>
+    <ul>
+      <li *ngFor="let post of posts">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.body }}</p>
+      </li>
+    </ul>
+  </div> -->
